@@ -1,0 +1,121 @@
+:root {
+    --feher: #ffffff;
+    --fekete: #000000;
+    --szurke: #585858;
+    --rozsaszin: #EB2B63;
+    --betu: font-family: 'Montserrat', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+html{
+    overflow-x: hidden;
+}
+body{
+    margin: 0;
+    padding: 0;
+    color: var(--feher);
+}
+.nav-link{
+    color: var(--feher);
+}
+.nav-link:hover,.nav-link:focus{
+    color: var(--rozsaszin);
+}
+.Fooldal {
+    background-image: url("./img/bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-height: 100vh;
+    padding-bottom: 3rem;
+}
+.Fooldal h2{
+    font-family: inherit;
+    font-size: clamp(1.8em,3vw,3vw);
+    font-weight: 600;
+}
+.Fooldal p{
+    font-size: clamp(1em,1vw,1vw);
+}
+.Fooldal button{
+    background-color: var(--rozsaszin);
+    color: var(--feher);
+    border: none;
+    width: fit-content;
+    border-radius: 10px;
+    padding: 13px;
+}
+.rocket-div{
+    padding-top: 5vh;
+}
+@media screen and (min-width:1200px){
+    .rocket-div{
+        padding-top: 0;
+    }   
+}
+.rocket{
+    width: 40vw;
+    /* margin-top: 7rem; */
+    position: relative;
+    transition: all linear;
+    animation:rocket 2s linear infinite;
+}
+@keyframes rocket {
+    0% {
+        left: 20px;
+        bottom: 20px;
+      }
+      25% {
+        left: -20px;
+        bottom: 20px;
+      }
+      50% {
+        left: -20px;
+        bottom: 0px;
+      }
+      75% {
+        left: 0px;
+        bottom: 0px;
+      }
+      100% {
+        left: 20px;
+        bottom: 20px;
+      }
+}
+
+.Szolgaltatasok{
+    color: var(--fekete);
+}
+.Szolgaltatasok .title-kep{
+    width: clamp(3.2rem,3vw,3vw);
+    height: clamp(3.2rem,3vw,3vw);
+}
+.Szolgaltatasok .title-legjobb {
+    font-family: Montserrat;
+    font-size: clamp(2em,3vw,3vw);
+    font-weight: 700;
+    color: var(--fekete);
+}
+.szolgaltatas-ikonok{
+    background-color: var(--rozsaszin);
+    padding: 1.4rem;
+    border-radius: 30%;
+}
+.Szolgaltatasok h2{
+    font-size: clamp(2em,1.6vw,1.6vw);
+    margin-top: 0.2em;
+    margin-bottom: 1em;
+}
+.Szolgaltatasok .title-szolg{
+    color: var(--szurke);
+    font-size: clamp(1em,1vw,1vw);
+    margin-bottom: 3rem;
+}
+.Szolgaltatasok hr{
+    color:var(--rozsaszin);
+    border-top:3px solid #EB2B63;
+    width: 80%;
+    margin: auto;
+    padding-block: 0.5em;
+}
