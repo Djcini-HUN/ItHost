@@ -56,7 +56,7 @@ body{
 }
 .rocket{
     width: 40vw;
-    /* margin-top: 7rem; */
+    margin-top: 7rem;
     position: relative;
     transition: all linear;
     animation:rocket 2s linear infinite;
@@ -118,4 +118,28 @@ body{
     width: 80%;
     margin: auto;
     padding-block: 0.5em;
+}
+.hirlevel{
+    background-image: url("./img/banner-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 500px;
+    /* margin-bottom: 5rem; */
+}
+.hirlevel input{
+    width: 40rem;
+    height: 2.6rem;
+}
+.hirlevel input:focus .hirlevel input:active{
+    border: none;
+}
+.hirlevel button{
+    background-color: var(--rozsaszin);
+    color: var(--feher);
+    border: none;
+    width: fit-content;
+    border-radius: 10px;
+    padding-inline: 12px;
+    height: 2.6rem;
 }
